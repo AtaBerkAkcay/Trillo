@@ -1,0 +1,16 @@
+header {
+  background-color: white;
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  box-shadow: var(--shadow);
+}
+
+.logo {
+  height: 3.5rem;
+  margin-left: 2rem;
+}
+

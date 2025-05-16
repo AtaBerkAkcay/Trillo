@@ -1,0 +1,152 @@
+.overview-header {
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: var(--shadow);
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 400px) {
+    height: 6rem;
+  }
+
+  &__name {
+    font-size: 2.4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    margin-left: 3rem;
+
+    @media (max-width: 550px) {
+      font-size: 2.1rem;
+    }
+
+    @media (max-width: 500px) {
+      margin-left: 2rem;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__stars {
+    display: flex;
+    gap: 0.1rem;
+    margin-left: 2.5rem;
+    margin-right: auto;
+    
+    @media (max-width: 500px) {
+      margin-left: 1.5rem;
+    }
+
+    @media (max-width: 450px) {
+      gap: 0;
+    }
+  }
+
+  &__star {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--main-color);
+
+    @media (max-width: 550px) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    &:not(:first-child) {
+      @media (max-width: 450px) {
+        margin-left: -0.1rem;
+      }
+    }
+
+    @media (max-width: 450px) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    @media (max-width: 450px) {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+  }
+
+  &__location-container {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-right: 3rem;
+
+    @media (max-width: 500px) {
+      margin-right: 2rem;
+    }
+
+    @media (max-width: 400px) {
+      gap: 0;
+    }
+  }
+
+  &__location-icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--main-color);
+
+    @media (max-width: 450px) {
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+
+    @media (max-width: 400px) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  &__rating-container {
+    align-self: stretch;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    color: white;
+    
+    @media (max-width: 400px) {
+      padding: 0 1.5rem;
+    }
+  }
+
+  &__average-rating {
+    font-size: 2.2rem;
+    font-weight: 300;
+    
+    @media (max-width: 450px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__rating-count {
+    font-size: 1.2rem;
+
+    @media (max-width: 450px) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 0.8rem;
+    }
+  }
+
+}

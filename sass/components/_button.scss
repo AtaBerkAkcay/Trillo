@@ -1,0 +1,57 @@
+.button {
+  font-family: inherit;
+  color: white;
+  width: 24rem;
+  height: 6rem;
+  border: none;
+  border-radius: 50rem;
+  background-image: linear-gradient(to  right, var(--main-color--light), var(--main-color--dark));
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    transition: transform .2s;
+
+    &--2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-100%);
+    }
+  }
+
+  &:hover {
+    background-image: linear-gradient(to right, var(--main-color--dark), var(--main-color--light));
+    
+    @media (max-width: 1200px) {
+      background-image: linear-gradient(to right, var(--main-color--light), var(--main-color--dark));
+
+    }
+
+    .button__content {
+      &--1 {
+        transform: translateY(100%);
+
+        @media (max-width: 1200px) {
+          transform: translateY(0);
+        }
+      }
+      
+      &--2 {
+        transform: translateY(0);
+
+        @media (max-width: 1200px) {
+          transform: translateY(-100%);
+        }
+      }
+    }
+  }
+}
